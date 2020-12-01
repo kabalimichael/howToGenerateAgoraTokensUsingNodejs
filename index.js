@@ -7,6 +7,7 @@ const APP_CERTIFICATE = '976c2e9f13304323ab2f0a54a15ddd90'; //process.env.APP_CE
 const app = express();
 
 const generateAccessToken = (req, resp) => {
+  console.log('.......... Called GET WAY API .....................');
     try {
     resp.header('Access-Control-Allow-Origin', '*');
     const channelName = req.query.channelName;
